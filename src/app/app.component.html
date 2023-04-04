@@ -1,0 +1,36 @@
+<div class="relative overflow-x-auto h-screen bg-gray-50">
+  <table class="w-full text-sm text-left">
+    <thead class="text-xs bg-gray-50 uppercase">
+    <tr>
+      <th scope="col" class="px-6 py-3">
+        Auction ID
+      </th>
+      <th scope="col" class="px-6 py-3">
+        Product
+      </th>
+      <th scope="col" class="px-6 py-3">
+        Seller
+      </th>
+      <th scope="col" class="px-6 py-3">
+        Start Price
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="bg-gray-200 border-b">
+      <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+        {{ auction?.id }}
+      </th>
+      <td class="px-6 py-4">
+        {{ auction?.product?.name }}
+      </td>
+      <td class="px-6 py-4">
+        {{ auction?.seller?.firstname }} {{ auction?.seller?.lastname }}
+      </td>
+      <td class="px-6 py-4">
+        {{ auction?.startPrice }}€
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
