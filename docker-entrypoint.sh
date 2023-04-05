@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 if [ -z "$BACKEND_URL" ]; then
     echo "Please set the BACKEND_URL environment variable" 1>&2
